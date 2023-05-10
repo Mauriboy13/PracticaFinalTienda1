@@ -153,9 +153,11 @@ function vistaCarrito() {
       htmlProductos += "</div>";
     }
     // Agregar el total de todos los precios al final del carrito
-    htmlProductos += "<p><strong>Productos agregados: </strong>" + productosSeleccionados.length + "</p>";
-    htmlProductos += "<p><strong>Total de todos los productos: $</strong>" + total + "</p>";
-
+// Agregar el total de todos los precios al final del carrito
+    htmlProductos += "<br><br><br><div style='display: flex; margin-top: 15px; background:#C4C4C4; position: fixed; bottom: 0; width: 100%; padding-top: 15px;'>";
+    htmlProductos += "<p style='align-self: flex-start'><strong>Productos agregados: </strong>" + productosSeleccionados.length + "</p>";
+    htmlProductos += "<p style='align-self: flex-end'><strong>Total de todos los productos: $</strong>" + total + "</p>";
+    htmlProductos += "<div>";
     document.getElementById("productosSeleccionados").innerHTML = htmlProductos;
   });
 }
